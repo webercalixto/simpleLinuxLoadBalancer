@@ -1,7 +1,8 @@
 #!/bin/bash
+ROOT_DIR='/home/pi/simpleLinuxLoadBalancer/'
 set -o history -o histexpand
 date
-cd /home/pi
+cd $ROOT_DIR
 pwd
 echo "performance" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
