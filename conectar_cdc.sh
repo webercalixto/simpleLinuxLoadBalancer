@@ -10,7 +10,7 @@ if {$force_conservative} {
 	}
 }
 
-spawn /home/pi/conectar_3G.sh cdc-wdm0
+spawn /home/pi/simpleLinuxLoadBalancer/conectar_3G.sh cdc-wdm0
 match_max 100000
 expect -exact "A password is required to connect to 'Claro connection'.\r
 Password (gsm.password): "

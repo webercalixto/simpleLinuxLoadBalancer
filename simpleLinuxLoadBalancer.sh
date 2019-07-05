@@ -1,5 +1,5 @@
 #!/bin/bash
-ROOT_DIR='/home/pi/simpleLinuxLoadBalancer/'
+ROOT_DIR='/home/pi/simpleLinuxLoadBalancer'
 set -o history -o histexpand
 date
 cd $ROOT_DIR
@@ -19,7 +19,7 @@ then
 	ifconfig $IF_LINK2 down
 	python resetModem.py search "Huawei"
 	sleep 10
-	/home/pi/conectar.sh	
+	./conectar.sh $ROOT_DIR
 	sleep 10
 	RECON_LINK2=1
 else
